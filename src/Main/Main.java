@@ -16,7 +16,7 @@ public class Main extends CategoriaDoPersonagem {
                 "1 - Guerreiro;\n" +
                         "2 - Mago;\n" +
                         "3 - Paladino;\n" +
-                        "4 - Orc;\n" +
+                        "4 - Orque;\n" +
                         "5 - Espadachim");
         System.out.println(categoriaDoPersonagem.getCategoriaDoPersonagem());
         System.out.println("Selecione uma Categoria para seu guerreiro:");
