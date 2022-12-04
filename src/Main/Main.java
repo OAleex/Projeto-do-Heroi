@@ -23,7 +23,7 @@ public class Main extends CategoriaDoPersonagem {
 
         String categoriaDoPersonagem =
                 "1 - Guerreiro;\n" +
-                        "2 - Mago;\n" +
+                        "2 - Magoo;\n" +
                         "3 - Paladino;\n" +
                         "4 - Orc;\n" +
                         "5 - Espadachim";
