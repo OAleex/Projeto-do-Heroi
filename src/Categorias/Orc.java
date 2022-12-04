@@ -10,7 +10,7 @@ public class Orc extends Inventario {
         super(listaDeArmas);
     }
 
-    Inventario addArma = new Inventario(Collections.singletonList("Clava, " + "Escudo"));
+    public static Inventario addArma = new Inventario(Collections.singletonList("Clava, " + "Escudo"));
 
 
 }

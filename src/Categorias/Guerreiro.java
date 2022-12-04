@@ -12,6 +12,6 @@ public class Guerreiro extends Inventario {
         super(listaDeArmas);
     }
 
-    Inventario addArma = new Inventario(Collections.singletonList("Espada, " + "Escudo"));
+    public static Inventario addArma = new Inventario(Collections.singletonList("Espada, " + "Escudo"));
 
     }

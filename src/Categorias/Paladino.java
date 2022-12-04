@@ -13,6 +13,6 @@ public class Paladino extends Inventario {
         super(listaDeArmas);
     }
 
-    Inventario addArma = new Inventario(Collections.singletonList("Adaga, " + "Arco"));
+    public static Inventario addArma = new Inventario(Collections.singletonList("Adaga, " + "Arco"));
 
 }

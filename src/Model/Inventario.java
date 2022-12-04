@@ -20,7 +20,7 @@ public class Inventario {
         this.listaDeArmas = listaDeArmas;
     }
 
-    @Override
+
     public String toString() {
         return "Suas armas:\n" + listaDeArmas;
     }

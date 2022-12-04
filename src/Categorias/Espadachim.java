@@ -12,7 +12,7 @@ public class Espadachim extends Inventario {
         super(listaDeArmas);
     }
 
-    Inventario addArma = new Inventario(Collections.singletonList("Espada Grande, " + "Espada Pequena"));
+    public static Inventario addArma = new Inventario(Collections.singletonList("Espada Grande, " + "Espada Pequena"));
 
 }
 
