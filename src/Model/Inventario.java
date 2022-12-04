@@ -1,40 +1,29 @@
 package Model;
 
 import java.util.ArrayList;
-import java.util.Objects;
+import java.util.List;
 
 public class Inventario {
 
-    public void armasParaGuerreiro(){
-        ArrayList<String> armas_guerreiro = new ArrayList<String>();
-        armas_guerreiro.add("Espada");
-        armas_guerreiro.add("Escudo");
 
+    private List<String> listaDeArmas = new ArrayList<>();
+
+    public Inventario(List<String> listaDeArmas) {
+        this.listaDeArmas = listaDeArmas;
     }
 
-    public void armasParaMago(){
-        ArrayList<String> armas_mago = new ArrayList<String>();
-        armas_mago.add("Cajado");
-        armas_mago.add("Livro de Encantamentos");
-
-        // HashMap vai ser para o Mago traduzir coisas pelo livro de encantamento
+    public List<String> getListaDeArmas() {
+        return listaDeArmas;
     }
 
-    public void armasParaPaladino(){
-        ArrayList<String> armas_paladino = new ArrayList<String>();
-        armas_paladino.add("Adaga");
-        armas_paladino.add("Arco");
+    public void setListaDeArmas(List<String> listaDeArmas) {
+        this.listaDeArmas = listaDeArmas;
     }
 
-    public void armasParaOrc(){
-        ArrayList<String> armas_orc = new ArrayList<String>();
-        armas_orc.add("Clava");
-        armas_orc.add("Escudo");
-    }
-
-    public void armasParaEspadachim(){
-        ArrayList<String> armas_espadachim = new ArrayList<String>();
-        armas_espadachim.add("Espada Grande");
-        armas_espadachim.add("Espada Pequena");
+    @Override
+    public String toString() {
+        return "Suas armas:\n" + listaDeArmas;
     }
 }
+
+
