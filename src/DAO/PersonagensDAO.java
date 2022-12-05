@@ -1,12 +1,21 @@
 package DAO;
 
-public class PersonagensDAO implements Ipersonagem {
+import java.util.HashMap;
+
+public  class PersonagensDAO implements Ipersonagem {
+
+    public HashMap<String, String> Historia = new HashMap<>();
+
+    public PersonagensDAO(){}
 
 
-    int escolha;
-    String itens_salvos;
+    @Override
+    public void addHistoria(String Personagem, String Historiaperson) {
+        Historia.put(Personagem , Historiaperson);
+    }
 
-
-
-
+    @Override
+    public void buscarHistoria(String Historiaperson) {
+        System.out.println(Historia.get(Historiaperson));
+    }
 }

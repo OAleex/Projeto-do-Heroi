@@ -1,6 +1,7 @@
 package Main;
 
 import Categorias.Guerreiro;
+import DAO.PersonagensDAO;
 import Interface.Ataques;
 import Model.CategoriaDoPersonagem;
 import java.util.InputMismatchException;
@@ -19,6 +20,27 @@ public class Main extends CategoriaDoPersonagem { //implements Ataques {
     }
 
     public static void main(String[] args) {
+
+        PersonagensDAO personagensDAO = new PersonagensDAO();
+
+        personagensDAO.addHistoria("Mago" , "Vivia em uma família nobre composta por \n" +
+                "magos da cidade de Santë'Soul.\n" +
+                " Seu avô era o mago mais experiente e respeitado entre todos os magos \n" +
+                "daquele local. No aniversário de 14 anos de Soulker,\n" +
+                " seu avô o presentou com um anel que seria capaz de armazenar imagens\n" +
+                " e facilitariam o aprendizado de Soulker, em seguida, \n" +
+                "o avô o mandou para a Escola de Magos em Inedrau, onde\n" +
+                " Saint Soulker vive até hoje aprimorando suas habilidades de\n" +
+                " invocação.");
+
+
+        System.out.println(personagensDAO.Historia);
+
+
+
+
+
+
 
         String categoriaDoPersonagem =
                 "1 - Guerreiro;\n" +
