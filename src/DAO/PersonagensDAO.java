@@ -1,6 +1,7 @@
 package DAO;
 
-public class Usuario {
+public class PersonagensDAO implements Ipersonagem {
+
 
     int escolha;
     String itens_salvos;
