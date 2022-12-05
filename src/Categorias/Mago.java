@@ -21,7 +21,7 @@ public class Mago extends Inventario implements Ataques {
         int cajado = 60;
 
         System.out.println("\nSeu " + getListaDeArmas().get(0) + " possui " + cajado + " de ataque a distancia.");
-        System.out.println("Seu " + getListaDeArmas().get(1) + " possui a capacidade de traduzir idiomas.");
+        System.out.println("Seu " + getListaDeArmas().get(1) + " possui a capacidade de traduzir idiomas.\n");
     }
 }
 
