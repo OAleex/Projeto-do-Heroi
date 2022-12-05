@@ -2,9 +2,7 @@ package Categorias;
 
 import Interface.Ataques;
 import Model.Inventario;
-
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class Espadachim extends Inventario implements Ataques {
@@ -14,13 +12,21 @@ public class Espadachim extends Inventario implements Ataques {
         super(listaDeArmas);
     }
 
-    public static Inventario addArma = new Inventario(Collections.singletonList("Espada Grande, " + "Espada Pequena"));
+    public static ArrayList<String> addArma = new ArrayList<String>();
 
-    @Override
+    static {
+        addArma.add("Espada Grande");
+        addArma.add("Espada Pequena");
+    }
+
     public void ataqueDoPersonagem() {
         int espadaGrande = 30;
-        System.out.println("Possui:" + getListaDeArmas().indexOf(0) + "de ataque");
+        int espadaPequena = 15;
+        System.out.println("\nSua " + getListaDeArmas().get(0) + " possui " + espadaGrande + " de ataque.");
+        System.out.println("Sua " + getListaDeArmas().get(1) + " possui " + espadaPequena + " de ataque.");
     }
+
+
 }
 
 
