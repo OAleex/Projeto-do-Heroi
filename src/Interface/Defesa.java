@@ -2,7 +2,7 @@ package Interface;
 
 public interface Defesa {
 
-    public void defesaDoPersonagem();
+    public void defesaDoPersonagem( int defend);
 
 
 }
