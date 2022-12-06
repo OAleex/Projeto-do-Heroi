@@ -1,8 +1,8 @@
 package Main;
 
 import Categorias.Guerreiro;
+import ContemplacaoDaHistoria.*;
 import DAO.PersonagensDAO;
-import Interface.Ataques;
 import Model.CategoriaDoPersonagem;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -23,11 +23,11 @@ public class Main extends CategoriaDoPersonagem { //implements Ataques {
 
         PersonagensDAO personagensDAO = new PersonagensDAO();
 
-        personagensDAO.addFala("Guerreiro" , "Vamos a luta!");
-        personagensDAO.addFala("Mago" , "Esta preparado?");
-        personagensDAO.addFala("Paladino" , "Eu cubro a area.");
-        personagensDAO.addFala("Orc" , "Eu fico de guarda.");
-        personagensDAO.addFala("Espadachim" , "Eu fico na frente.");
+        personagensDAO.addFala("Guerreiro", "'Vamos a luta!'\n");
+        personagensDAO.addFala("Mago", "'Esta preparado?'\n");
+        personagensDAO.addFala("Paladino", "'Eu cubro a area.'\n");
+        personagensDAO.addFala("Orc", "'Eu fico de guarda.'\n");
+        personagensDAO.addFala("Espadachim", "'Eu fico na frente.'\n");
 
 
         String categoriaDoPersonagem =
@@ -41,9 +41,10 @@ public class Main extends CategoriaDoPersonagem { //implements Ataques {
 
         // Tratamento de erro e Scanner
 
+        int opcao = 0;
         try {
 
-            int opcao = 0;
+            opcao = 0;
 
             while (opcao != 1 && opcao != 2 && opcao != 3 && opcao != 4 && opcao != 5) {
 
@@ -57,6 +58,8 @@ public class Main extends CategoriaDoPersonagem { //implements Ataques {
                         System.out.println(guerreiro);
                         guerreiro.ataqueDoPersonagem();
                         personagensDAO.buscarFala("Guerreiro");
+                        ContGuerreiro contguerreiro = new ContGuerreiro();
+                        contguerreiro.ContemplarGuerreiro();
                         break;
                     case 2:
                         System.out.println("Voce selecionou o Mago");
@@ -64,6 +67,8 @@ public class Main extends CategoriaDoPersonagem { //implements Ataques {
                         System.out.println(mago);
                         mago.ataqueDoPersonagem();
                         personagensDAO.buscarFala("Mago");
+                        ContMago contmago = new ContMago();
+                        contmago.ContemplarMago();
                         break;
                     case 3:
                         System.out.println("Voce selecionou o Paladino");
@@ -71,6 +76,8 @@ public class Main extends CategoriaDoPersonagem { //implements Ataques {
                         System.out.println(paladino);
                         paladino.ataqueDoPersonagem();
                         personagensDAO.buscarFala("Paladino");
+                        ContPaladino contpaladino = new ContPaladino();
+                        contpaladino.ContemplarPaladino();
                         break;
                     case 4:
                         System.out.println("Voce selecionou o Orc");
@@ -78,6 +85,8 @@ public class Main extends CategoriaDoPersonagem { //implements Ataques {
                         System.out.println(orc);
                         orc.ataqueDoPersonagem();
                         personagensDAO.buscarFala("Orc");
+                        ContOrc contorc = new ContOrc();
+                        contorc.ContemplarOrc();
                         break;
                     case 5:
                         System.out.println("Voce selecionou o Espadachim");
@@ -85,20 +94,16 @@ public class Main extends CategoriaDoPersonagem { //implements Ataques {
                         System.out.println(espadachim);
                         espadachim.ataqueDoPersonagem();
                         personagensDAO.buscarFala("Espadachim");
+                        // ending
+                        ContEspadachim contespadachim = new ContEspadachim();
+                        contespadachim.ContemplarEspadachim();
                         break;
                     default:
                         System.out.println("Opcao invalida.\nSelecione uma Categoria para seu guerreiro:");
                 }
             }
         } catch (InputMismatchException e) {
-            System.out.println("Digite apenas numeros.");
+            System.out.println("Digite apenas numeros.\nPrograma encerrado, abra novamente.");
         }
     }
 }
-
-//
-//    @Override
-//    public void ataqueDoPersonagem() {
-//
-//    }
-//}
