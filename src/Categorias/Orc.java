@@ -1,6 +1,8 @@
 package Categorias;
 
 import Interface.Ataques;
+import Interface.Vitalidade;
+import Model.Cenario;
 import Model.Inventario;
 import Vilao.Model.Lord;
 import Vilao.Poderes.Fogo;
@@ -9,7 +11,7 @@ import Vilao.Poderes.Hipnose;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Orc extends Inventario implements Ataques {
+public class Orc extends Inventario implements Ataques, Cenario, Vitalidade {
     public Orc(List<String> listaDeArmas) {
         super(listaDeArmas);
     }
@@ -36,5 +38,12 @@ public class Orc extends Inventario implements Ataques {
         return "-----"
                 + lord;
     }
-
+    @Override
+    public void nomeDoCenario() {
+        System.out.println("Cenario de Combate: Floresta\n");
+    }
+    @Override
+    public void barraDeVida() {
+        System.out.println("Barra de vida: 600/600\n");
+    }
 }

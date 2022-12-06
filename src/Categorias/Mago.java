@@ -1,6 +1,8 @@
 package Categorias;
 
 import Interface.Ataques;
+import Interface.Vitalidade;
+import Model.Cenario;
 import Model.Inventario;
 import Vilao.Model.Lord;
 import Vilao.Poderes.Fogo;
@@ -9,7 +11,7 @@ import Vilao.Poderes.Hipnose;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Mago extends Inventario implements Ataques {
+public class Mago extends Inventario implements Ataques, Cenario, Vitalidade {
     public Mago(List<String> listaDeArmas) {
         super(listaDeArmas);
     }
@@ -25,7 +27,7 @@ public class Mago extends Inventario implements Ataques {
         int cajado = 60;
 
         System.out.println("\nSeu " + getListaDeArmas().get(0) + " possui " + cajado + " de ataque a distancia.");
-        System.out.println("Seu " + getListaDeArmas().get(1) + " possui a capacidade de traduzir idiomas.\n");
+        System.out.println("Seu " + getListaDeArmas().get(1) + " possui a capacidade de traduzir idiomas.");
     }
 
     Hipnose hipnose = new Hipnose();
@@ -36,5 +38,12 @@ public class Mago extends Inventario implements Ataques {
         return "-----"
                 + lord;
     }
-
+    @Override
+    public void nomeDoCenario() {
+        System.out.println("Cenario de Combate: Egito\n");
+    }
+    @Override
+    public void barraDeVida() {
+        System.out.println("Barra de vida: 250/250\n");
+    }
 }

@@ -19,3 +19,4 @@ public class Golpes implements IAtaques {
         return "Voce usou o golpe especial";
     }
 }
+

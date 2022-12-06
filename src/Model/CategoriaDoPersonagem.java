@@ -12,4 +12,3 @@ public class CategoriaDoPersonagem {
         return categoriaDoPersonagem;
     }
 }
-

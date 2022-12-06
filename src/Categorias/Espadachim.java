@@ -1,6 +1,8 @@
 package Categorias;
 
 import Interface.Ataques;
+import Interface.Vitalidade;
+import Model.Cenario;
 import Model.Inventario;
 import Vilao.Poderes.Fogo;
 import Vilao.Model.Lord;
@@ -9,7 +11,7 @@ import Vilao.Poderes.Hipnose;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Espadachim extends Inventario implements Ataques {
+public class Espadachim extends Inventario implements Ataques, Cenario, Vitalidade {
 
 
 
@@ -43,9 +45,13 @@ public class Espadachim extends Inventario implements Ataques {
         return "-----"
                 + lord;
     }
+    @Override
+    public void nomeDoCenario() {
+        System.out.println("Cenario de Combate: Lago\n");
+    }
+
+    @Override
+    public void barraDeVida() {
+        System.out.println("Barra de vida: 300/300\n");
+    }
 }
-
-
-
-
-

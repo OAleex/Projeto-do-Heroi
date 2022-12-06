@@ -13,7 +13,7 @@ import Categorias.Paladino;
 
 
 
-public class Main extends CategoriaDoPersonagem { //implements Ataques {
+public class Main extends CategoriaDoPersonagem {
 
     public Main(String categoriaDoPersonagem) {
         super(categoriaDoPersonagem);
@@ -57,7 +57,9 @@ public class Main extends CategoriaDoPersonagem { //implements Ataques {
                         Guerreiro guerreiro = new Guerreiro(Guerreiro.addArma);
                         System.out.println(guerreiro);
                         guerreiro.ataqueDoPersonagem();
+                        guerreiro.barraDeVida();
                         personagensDAO.buscarFala("Guerreiro");
+                        guerreiro.nomeDoCenario();
                         ContGuerreiro contguerreiro = new ContGuerreiro();
                         contguerreiro.ContemplarGuerreiro();
                         break;
@@ -66,7 +68,9 @@ public class Main extends CategoriaDoPersonagem { //implements Ataques {
                         Mago mago = new Mago(Mago.addArma);
                         System.out.println(mago);
                         mago.ataqueDoPersonagem();
+                        mago.barraDeVida();
                         personagensDAO.buscarFala("Mago");
+                        mago.nomeDoCenario();
                         ContMago contmago = new ContMago();
                         contmago.ContemplarMago();
                         break;
@@ -75,7 +79,9 @@ public class Main extends CategoriaDoPersonagem { //implements Ataques {
                         Paladino paladino = new Paladino(Paladino.addArma);
                         System.out.println(paladino);
                         paladino.ataqueDoPersonagem();
+                        paladino.barraDeVida();
                         personagensDAO.buscarFala("Paladino");
+                        paladino.nomeDoCenario();
                         ContPaladino contpaladino = new ContPaladino();
                         contpaladino.ContemplarPaladino();
                         break;
@@ -84,7 +90,9 @@ public class Main extends CategoriaDoPersonagem { //implements Ataques {
                         Orc orc = new Orc(Orc.addArma);
                         System.out.println(orc);
                         orc.ataqueDoPersonagem();
+                        orc.barraDeVida();
                         personagensDAO.buscarFala("Orc");
+                        orc.nomeDoCenario();
                         ContOrc contorc = new ContOrc();
                         contorc.ContemplarOrc();
                         break;
@@ -93,7 +101,9 @@ public class Main extends CategoriaDoPersonagem { //implements Ataques {
                         Espadachim espadachim = new Espadachim(Espadachim.addArma);
                         System.out.println(espadachim);
                         espadachim.ataqueDoPersonagem();
+                        espadachim.barraDeVida();
                         personagensDAO.buscarFala("Espadachim");
+                        espadachim.nomeDoCenario();
                         // ending
                         ContEspadachim contespadachim = new ContEspadachim();
                         contespadachim.ContemplarEspadachim();
