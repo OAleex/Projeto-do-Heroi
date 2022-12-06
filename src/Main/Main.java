@@ -41,10 +41,10 @@ public class Main extends CategoriaDoPersonagem {
 
         // Tratamento de erro e Scanner
 
-        int opcao = 0;
+
         try {
 
-            opcao = 0;
+            int opcao = 0;
 
             while (opcao != 1 && opcao != 2 && opcao != 3 && opcao != 4 && opcao != 5) {
 
