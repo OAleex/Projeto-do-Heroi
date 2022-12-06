@@ -2,7 +2,7 @@ package DAO;
 
 import java.util.HashMap;
 
-public  class PersonagensDAO implements Ipersonagem {
+public  class PersonagensDAO implements IPersonagem {
 
     public HashMap<String, String> Historia = new HashMap<>();
 
@@ -10,12 +10,12 @@ public  class PersonagensDAO implements Ipersonagem {
 
 
     @Override
-    public void addHistoria(String Personagem, String Historiaperson) {
-        Historia.put(Personagem , Historiaperson);
+    public void addFala(String personagem, String fala) {
+        Historia.put(personagem , fala);
     }
 
     @Override
-    public void buscarHistoria(String Historiaperson) {
-        System.out.println(Historia.get(Historiaperson));
+    public void buscarFala(String fala) {
+        System.out.println(Historia.get(fala));
     }
 }

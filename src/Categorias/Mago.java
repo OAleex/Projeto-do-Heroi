@@ -38,5 +38,3 @@ public class Mago extends Inventario implements Ataques {
     }
 
 }
-
-// HashMap vai ser para o Mago traduzir coisas pelo livro de encantamento
