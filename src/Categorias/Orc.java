@@ -2,6 +2,10 @@ package Categorias;
 
 import Interface.Ataques;
 import Model.Inventario;
+import Vilao.Model.Lord;
+import Vilao.Poderes.Fogo;
+import Vilao.Poderes.Hipnose;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,4 +27,14 @@ public class Orc extends Inventario implements Ataques {
         System.out.println("\nSua " + getListaDeArmas().get(0) + " possui " + clava + " de ataque.");
         System.out.println("Sua " + getListaDeArmas().get(1) + " possui " + escudo + " de resistencia.");
     }
+
+    Hipnose hipnose = new Hipnose();
+    Fogo fogo = new Fogo();
+    Lord lord = new Lord(hipnose);
+    @Override
+    public String toString() {
+        return "-----"
+                + lord;
+    }
+
 }

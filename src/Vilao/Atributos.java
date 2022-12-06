@@ -9,4 +9,6 @@ public class Atributos {
     String armas;
     String itens;
 
+
+
 }

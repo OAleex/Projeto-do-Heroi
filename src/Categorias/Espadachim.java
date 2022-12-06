@@ -2,15 +2,23 @@ package Categorias;
 
 import Interface.Ataques;
 import Model.Inventario;
+import Vilao.Poderes.Fogo;
+import Vilao.Model.Lord;
+import Vilao.Poderes.Hipnose;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Espadachim extends Inventario implements Ataques {
 
 
-    public Espadachim(List<String> listaDeArmas) {
+
+
+    public Espadachim(List<String> listaDeArmas ) {
         super(listaDeArmas);
     }
+
+
 
     public static ArrayList<String> addArma = new ArrayList<String>();
 
@@ -27,6 +35,14 @@ public class Espadachim extends Inventario implements Ataques {
     }
 
 
+    Hipnose hipnose = new Hipnose();
+    Fogo fogo = new Fogo();
+    Lord lord = new Lord(hipnose);
+    @Override
+    public String toString() {
+        return "-----"
+                + lord;
+    }
 }
 
 
