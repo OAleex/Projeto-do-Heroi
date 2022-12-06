@@ -26,7 +26,7 @@ public class Guerreiro extends Inventario implements Ataques {
         int espada = 35;
         int escudo = 50;
         System.out.println("\nSua " + getListaDeArmas().get(0) + " possui " + espada + " de ataque.");
-        System.out.println("Seu " + getListaDeArmas().get(1) + " possui " + escudo + " de resistencia.");
+        System.out.println("Seu " + getListaDeArmas().get(1) + " possui " + escudo + " de resistencia.\n");
     }
 
     Hipnose hipnose = new Hipnose();
