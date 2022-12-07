@@ -9,7 +9,8 @@ public interface IBolsa {
 
     public void adicionarItem(Object item);
     public void buscarItemPelaPosicao(int index);
-    public void removerItem(int item);
+    public boolean removerItem(int item);
+    public void listarTodosOsItens();
 
 
 }
