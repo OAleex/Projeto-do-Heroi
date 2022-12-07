@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="Akuma Quest:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/Akuma_Quest_jar</output-path>
-    <root id="archive" name="Akuma Quest.jar">
-      <element id="module-output" name="Akuma Quest" />
-    </root>
-  </artifact>
-</component>
