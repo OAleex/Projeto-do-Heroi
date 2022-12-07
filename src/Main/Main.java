@@ -38,7 +38,7 @@ public class Main {
 //        bolsa.removerItem(0);
 
         // Vilao
-        Vilao vilao = new Vilao("Lord Farquaad", 300, 500);
+        Vilao vilao = new Vilao("Lord Farquaad", 300, 500, 550);
         System.out.println(vilao);
 
         System.out.println("Apos conseguir vencer a batalha ardua contra o " + vilao.getNome() +
