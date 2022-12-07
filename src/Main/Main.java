@@ -15,8 +15,9 @@ public class Main {
 
         Corda corda = new Corda();
         Picareta picareta = new Picareta();
-        Heroi heroi = new Heroi(corda);
+        Heroi heroi = new Heroi("vilao","Exelente", 10, 6, picareta);
         heroi.usarFerramenta();
+        System.out.println(heroi);
     }
 
 }

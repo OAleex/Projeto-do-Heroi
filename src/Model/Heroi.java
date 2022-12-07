@@ -8,9 +8,14 @@ public class Heroi extends Personagem implements IUsarFerramenta {
 
     String reputacaoDeHeroi;
 
-    public Heroi(String nome, int nivelDeVida, int nivelDeforca) {
+    public Heroi(String nome,String reputacaoDeHeroi, int nivelDeVida, int nivelDeforca, IUsarFerramenta usarFerramenta) {
         super(nome, nivelDeVida, nivelDeforca);
+        this.reputacaoDeHeroi =  reputacaoDeHeroi;
+        this.usar = usarFerramenta;
+
     }
+
+
 
 
     @Override

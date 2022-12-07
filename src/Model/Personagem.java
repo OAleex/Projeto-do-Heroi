@@ -12,6 +12,7 @@ public class Personagem {
         this.nivelDeforca = nivelDeforca;
     }
 
+
     public String getNome() {
         return nome;
     }
