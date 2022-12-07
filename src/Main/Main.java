@@ -25,7 +25,7 @@ public class Main {
         // Falas
         Falas falas = new Falas();
         falas.adicionarFala("Alex Kidd", "Vamos nessa!");
-//        falas.removerFalaPorNome("Alex Kidd");
+        falas.removerFalaPorNome("Alex Kidd");
         falas.buscarFala("Alex Kidd");
 
         // Bolsa de itens
@@ -40,7 +40,6 @@ public class Main {
         // Vilao
         Vilao vilao = new Vilao("Lord Farquaad", 300, 500, 550);
         System.out.println(vilao);
-
         System.out.println("Apos conseguir vencer a batalha ardua contra o " + vilao.getNome() +
                 ", o mundo foi sao e salvo.");
     }

@@ -15,8 +15,14 @@ public class Falas implements IFalas {
 
     @Override
     public void buscarFala(String localizarFala) {
-        System.out.println(falasDoPersonagemDAO.get(localizarFala));
+        if (falasDoPersonagemDAO.get(localizarFala) != null) {
+            System.out.println(falasDoPersonagemDAO.get(localizarFala));
+        }
+        else {
+            System.out.println(". . .");
+        }
     }
+
 
     @Override
     public void removerFalaPorNome(String personagem) {
