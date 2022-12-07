@@ -8,17 +8,11 @@ public class Heroi extends Personagem implements IUsarFerramenta {
 
     String reputacaoDeHeroi;
 
-    public Heroi(String nome, int vida, int forca) {
-        super(nome, vida, forca);
+    public Heroi(String nome, int nivelDeVida, int nivelDeforca) {
+        super(nome, nivelDeVida, nivelDeforca);
     }
 
-    public String getReputacaoDeHeroi() {
-        return reputacaoDeHeroi;
-    }
 
-    public void setReputacaoDeHeroi(String reputacaoDeHeroi) {
-        this.reputacaoDeHeroi = reputacaoDeHeroi;
-    }
     @Override
     public void usarFerramenta() {
         this.usar.usarFerramenta();
