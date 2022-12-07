@@ -5,10 +5,9 @@ import Interfaces.IBolsa;
 import java.util.ArrayList;
 
 public class Bolsa implements IBolsa {
-
     ArrayList<Object> armazemItem;
 
-    public Bolsa(){
+    public Bolsa() {
         armazemItem = new ArrayList<>();
     }
 
@@ -17,13 +16,15 @@ public class Bolsa implements IBolsa {
         listarItensDaBolsa.add(item);
     }
 
-    @Override
-    public void buscarItem(Object personagem) {
-        System.out.println(listarItensDaBolsa.get(0));
+
+    public void buscarItemPelaPosicao(int index) {
+        for (int i = 0; i < listarItensDaBolsa.size(); i++) {
+            System.out.println(listarItensDaBolsa.get(i));
+        }
     }
 
     @Override
-    public void removerItem(Object personagem) {
-        listarItensDaBolsa.remove(personagem);
+    public void removerItem(Object item) {
+
     }
 }

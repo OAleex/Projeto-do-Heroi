@@ -21,10 +21,10 @@ public class Main {
         heroi.usarFerramenta();
 
         Bolsa bolsa = new Bolsa();
-        bolsa.adicionarItem("Pocao HP");
-        bolsa.adicionarItem("Pocao MP");
+        bolsa.adicionarItem("Pocao de MP");
+        bolsa.adicionarItem("Pocao de HP");
+
         bolsa.buscarItemPelaPosicao(0);
-
+        bolsa.removerItem(0);
     }
-
 }
