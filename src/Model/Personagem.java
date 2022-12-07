@@ -47,9 +47,9 @@ public class Personagem {
 
     @Override
     public String toString() {
-        return "Sobre o personagem:" +
-                "Nome: '" + nome + '\'' +
-                "Vida: " + nivelDeVida +
-                "Nivel de forca: " + nivelDeforca;
+        return "Sobre o personagem:\n" +
+                "Nome: " + nome + "\n" +
+                "Vida: " + nivelDeVida + "\n" +
+                "Nivel de forca : " + nivelDeforca + "\n";
     }
 }

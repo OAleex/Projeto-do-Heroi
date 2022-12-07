@@ -6,6 +6,6 @@ public class Corda implements IUsarFerramenta {
 
     @Override
     public void usarFerramenta() {
-        System.out.println("Usou a Corda.");
+        System.out.println("Usou a Corda para descer o castelo.");
     }
 }

@@ -12,7 +12,6 @@ public class Heroi extends Personagem implements IUsarFerramenta {
         super(nome, nivelDeVida, nivelDeforca);
         this.reputacaoDeHeroi =  reputacaoDeHeroi;
         this.usar = usarFerramenta;
-
     }
 
 
@@ -26,11 +25,10 @@ public class Heroi extends Personagem implements IUsarFerramenta {
 
     @Override
     public String toString() {
-        return "Sobre o Heroi:" +
-                "ReputacaoDeHeroi: " + reputacaoDeHeroi + '\'' +
-                "Nome: '" + nome + '\'' +
-                "Nivel de vida: " + nivelDeVida +
-                "Nivel de Forca: " + nivelDeforca +
-                '}';
+        return "Sobre o heroi:\n" +
+                "Nome: " + nome + "\n" +
+                "Reputacao de heroi: " + reputacaoDeHeroi + "\n" +
+                "Nivel de vida: " + nivelDeVida + "\n" +
+                "Nivel de Forca: " + nivelDeforca + "\n";
     }
 }

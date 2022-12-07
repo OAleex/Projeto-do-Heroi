@@ -1,5 +1,6 @@
 package Main;
 
+import Dao.Bolsa;
 import Dao.Falas;
 import Model.Corda;
 import Model.Heroi;
@@ -15,9 +16,15 @@ public class Main {
 
         Corda corda = new Corda();
         Picareta picareta = new Picareta();
-        Heroi heroi = new Heroi("vilao","Exelente", 10, 6, picareta);
-        heroi.usarFerramenta();
+        Heroi heroi = new Heroi("Alex Kidd","Exelente", 10, 6, picareta);
         System.out.println(heroi);
+        heroi.usarFerramenta();
+
+        Bolsa bolsa = new Bolsa();
+        bolsa.adicionarItem("Pocao HP");
+        bolsa.adicionarItem("Pocao MP");
+        bolsa.buscarItemPelaPosicao(0);
+
     }
 
 }
