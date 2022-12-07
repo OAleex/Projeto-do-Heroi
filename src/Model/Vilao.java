@@ -10,7 +10,6 @@ public class Vilao extends Personagem {
     }
 
 
-
     @Override
     public String toString() {
         return  "\nSobre o Vilao:\n" +
