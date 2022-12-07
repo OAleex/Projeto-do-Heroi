@@ -24,7 +24,7 @@ public class Bolsa implements IBolsa {
     }
 
     @Override
-    public void removerItem(Object item) {
-
+    public void removerItem(int item) {
+        listarItensDaBolsa.remove(item);
     }
 }
