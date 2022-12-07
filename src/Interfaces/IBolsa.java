@@ -9,7 +9,7 @@ public interface IBolsa {
 
     public void adicionarItem(Object item);
     public void buscarItemPelaPosicao(int index);
-    public void removerItem(Object item);
+    public void removerItem(int item);
 
 
 }
