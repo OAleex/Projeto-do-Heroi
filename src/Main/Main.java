@@ -3,10 +3,7 @@ package Main;
 import Dao.Bolsa;
 import Dao.Falas;
 import Interfaces.IUsarFerramenta;
-import Model.Corda;
-import Model.Heroi;
-import Model.Picareta;
-import Model.Vilao;
+import Model.*;
 
 public class Main {
 
@@ -21,11 +18,13 @@ public class Main {
         Heroi heroi = new Heroi("Alex Kidd",150, 250, picareta);
         System.out.println(heroi);
         heroi.usarFerramenta();
+        heroi.atualizarFerramenta(new SerraEletrica());
+        heroi.usarFerramenta();
 
         // Falas
         Falas falas = new Falas();
         falas.adicionarFala("Alex Kidd", "Vamos nessa!");
-        falas.removerFalaPorNome("Alex Kidd");
+//        falas.removerFalaPorNome("Alex Kidd");
         falas.buscarFala("Alex Kidd");
 
         // Bolsa de itens

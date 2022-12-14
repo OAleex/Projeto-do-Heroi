@@ -13,6 +13,12 @@ public class Heroi extends Personagem implements IUsarFerramenta {
         this.usar = usarFerramenta;
     }
 
+
+
+    public void atualizarFerramenta(IUsarFerramenta usarFerramenta){
+        this.usar = usarFerramenta;
+    }
+
     @Override
     public void usarFerramenta() {
         this.usar.usarFerramenta();
